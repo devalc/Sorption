@@ -1,5 +1,17 @@
 # Sorption
 
+R package for predicting sorption processes using empirical models. Currently 
+contains funcitons for Langmuir model.  
+
 # Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the "Sorption" up and running on your 
+local machine.
+
+## How to Install
+
+You can install this through devtools:
+
+```{r}
+dim(iris)
+```
