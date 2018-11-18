@@ -3,7 +3,7 @@
 R package for predicting sorption processes using empirical models. Currently 
 contains funcitons only for Langmuir model.         
 
-#3 Getting Started
+## Getting Started
 
 These instructions will get you a copy of the "Sorption" up and running on your 
 local machine.
