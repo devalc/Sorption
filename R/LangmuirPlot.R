@@ -8,9 +8,9 @@
 #' @param file_name file name/path to which the plot will be exported (e.g: "Plots/Langmuir_plt" )
 #' @return A pdf containing the plot
 #' @export
+#' @import ggpubr
+#' @import ggplot2
 
-library(ggpubr)
-library(ggplot2)
 
 LangmuirPlot <- function(Ce, Qe, cor_lab_x , cor_lab_y ,
                           eq_lab_x, eq_lab_y,  file_name){

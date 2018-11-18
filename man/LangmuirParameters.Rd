@@ -7,9 +7,9 @@
 LangmuirParameters(Ce, Qe, output_fname)
 }
 \arguments{
-\item{Ce}{equilibrium solution concentrations}
+\item{Ce}{equilibrium solution concentrations in mg/l}
 
-\item{Qe}{retention by solid (adsorption)}
+\item{Qe}{retention by solid (adsorption) in mg/kg}
 
 \item{output_fname}{}
 }

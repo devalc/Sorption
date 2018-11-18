@@ -7,9 +7,9 @@
 LangmuirPlot(Ce, Qe, cor_lab_x, cor_lab_y, eq_lab_x, eq_lab_y, file_name)
 }
 \arguments{
-\item{Ce}{equilibrium solution concentrations}
+\item{Ce}{equilibrium solution concentrations in mg/l}
 
-\item{Qe}{retention by solid (adsorption)}
+\item{Qe}{retention by solid (adsorption) mg/kg}
 
 \item{cor_lab_x, cor_lab_y}{location on the plot to place pearson r and p-value}
 

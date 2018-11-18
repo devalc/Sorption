@@ -2,3 +2,5 @@
 
 export(LangmuirParameters)
 export(LangmuirPlot)
+import(ggplot2)
+import(ggpubr)
