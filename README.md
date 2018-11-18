@@ -13,5 +13,5 @@ local machine.
 You can install this through devtools:
 
 ```{r}
-dim(iris)
+devtools::install_github("devalc/Sorption")
 ```
