@@ -16,3 +16,27 @@ package using devtools as:
 ```{r}
 devtools::install_github("devalc/Sorption")
 ```
+# Usage
+
+Once installed the package can be loaded to the system using:
+```{r}
+library(Sorption")
+```
+This will also load a test data vectors which can be accessed using:
+
+```{r}
+test_Ceq , test_Qeq 
+```
+
+## Example Usage: Parameters
+
+Parameters for the frequnlich isotherm can be predicted using:
+```{r}
+FreundlichParameters(test_Ceq, test_Qeq, "test.csv")
+```
+## Example Usage: Plots
+
+Frequnlich isotherm can be plotted using:
+```{r}
+FreundlichPlot(test_Ceq, test_Qeq, 0.,0.8,0.,0.9,"test.pdf")
+```
