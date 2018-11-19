@@ -22,7 +22,7 @@ Once installed the package can be loaded to the system using:
 ```{r}
 library(Sorption")
 ```
-This will also load a test data vectors which can be accessed using:
+This will also load test data vectors which can be accessed using:
 
 ```{r}
 test_Ceq , test_Qeq 
