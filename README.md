@@ -1,7 +1,7 @@
 # Sorption
 
 R package for predicting sorption processes using empirical models. Currently 
-contains funcitons only for Langmuir model.         
+contains funcitons only for the Langmuir and Freundlich models.         
 
 ## Getting Started
 
