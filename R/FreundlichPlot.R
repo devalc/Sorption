@@ -21,7 +21,7 @@ FreundlichPlot <- function(Ce, Qe, cor_lab_x , cor_lab_y ,
     name<- paste0(file_name,".pdf")
     coeff = coefficients(fit)
     z <- data.frame(x,y)
-    ggscatter(x = "x",y ="y", data = z, xlab = "Ce (mg/L)", ylab = " Ce/q (Kg/L)", add = "reg.line",
+    ggscatter(x = "x",y ="y", data = z, xlab = "log10 [Ce (mg/L)]", ylab = " log10 [Qe (mg/kg)]", add = "reg.line",
               conf.int = TRUE,
               add.params = list(color = "blue",
                                 fill = "lightgray")) +
