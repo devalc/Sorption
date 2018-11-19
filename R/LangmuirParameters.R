@@ -3,7 +3,7 @@
 #' This function estimates langmuir isotherm model parameters using the linear form of langmuir equation.
 #' @param Ce equilibrium solution concentrations in mg/l
 #' @param Qe retention by solid (adsorption) in mg/kg
-#' @param  output_fname
+#' @param  output_fname file name/path to which the parameters will be exported (e.g: "analysis/langmuir.csv" )
 #' @return A csv file containing the estimated parameters
 #' @export
 
