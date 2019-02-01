@@ -6,13 +6,16 @@
 #' @param  output_fname file name/path to which the parameters will be exported (e.g: "analysis/langmuir.csv" )
 #' @return A csv file containing the estimated parameters
 #' @export
+#' @import IDPmisc
 
 
 
 FreundlichParameters <- function(Ce, Qe, output_fname)
 {
     x <- log10(Ce)
+    x<- IDPmisc::NaRV.omit(x)
     y <- log10(Qe)
+    y<-IDPmisc::NaRV.omit(y)
     fit <- lm(y ~ x)
     n <- fit$coefficients[1]
     logKf<- fit$coefficients[2]

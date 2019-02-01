@@ -10,13 +10,15 @@
 #' @export
 #' @import ggpubr
 #' @import ggplot2
+#' @import IDPmisc
 
 
 FreundlichPlot <- function(Ce, Qe, cor_lab_x , cor_lab_y ,
                          eq_lab_x, eq_lab_y,  file_name){
-
     x <- log10(Ce)
-    y<- log10(Qe)
+    x<- IDPmisc::NaRV.omit(x)
+    y <- log10(Qe)
+    y<-IDPmisc::NaRV.omit(y)
     fit <- lm(y ~ x)
     name<- paste0(file_name,".pdf")
     coeff = coefficients(fit)
