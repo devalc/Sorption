@@ -5,9 +5,8 @@
 #' @param Qe retention by solid (adsorption) in mg/kg
 #' @param  output_fname file name/path to which the parameters will be exported (e.g: "analysis/langmuir.csv" )
 #' @return A csv file containing the estimated parameters
-#' @export
 #' @import IDPmisc
-
+#' @export
 
 
 FreundlichParameters <- function(Ce, Qe, output_fname)

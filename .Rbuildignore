@@ -1,2 +1,4 @@
 ^Sorption\.Rproj$
 ^\.Rproj\.user$
+^packrat/
+^\.Rprofile$
