@@ -14,10 +14,10 @@ LangmuirParameters <- function(Ce, Qe, output_fname)
     x <- Ce
     y <- Ce/Qe
     fit <- lm(y ~ x)
-    c <- fit$coefficients[1]
-    slp<- fit$coefficients[2]
+    c <- fit$coefficients[[1]]
+    slp<- fit$coefficients[[2]]
     qmax <- 1/slp
-    KL<- (c/slp)
+    KL<- 1/(qmax*c)
     Par_names_header<-paste0("parameters_",sub(pattern = "(.*)\\..*$", replacement = "\\1", basename (output_fname)))
     Par_names<- c("intercept","slope(1/qmax(mg/Kg))", "qmax(mg/Kg)", "KL")
     Par_values_header <- paste0("par_Values_",sub(pattern = "(.*)\\..*$", replacement = "\\1", basename (output_fname)))

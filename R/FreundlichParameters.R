@@ -16,8 +16,8 @@ FreundlichParameters <- function(Ce, Qe, output_fname)
     y <- log10(Qe)
     y<-IDPmisc::NaRV.omit(y)
     fit <- lm(y ~ x)
-    n <- fit$coefficients[1]
-    logKf<- fit$coefficients[2]
+    n <- fit$coefficients[[2]]
+    logKf<- fit$coefficients[[1]]
     Kf<- (10**logKf)
     Par_names_header<-paste0("parameters_",sub(pattern = "(.*)\\..*$", replacement = "\\1", basename (output_fname)))
     Par_names<- c("logKf","n", "Kf")
