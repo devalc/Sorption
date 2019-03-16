@@ -1,7 +1,7 @@
 # Sorption
 
 R package for predicting sorption processes using empirical models. Currently 
-contains funcitons only for the Langmuir and Freundlich models.         
+contains funcitons for the Langmuir and Freundlich models.         
 
 ## Getting Started
 
@@ -10,8 +10,15 @@ local machine.
 
 ## How to Install
 
-Currently the package is available only through devtools. You can install the 
-package using devtools as:
+Currently the package is available only through devtools. 
+
+Install devtools by running following command in your R console: 
+
+```{r}
+install.packages("devtools")
+```
+
+Now you can install the Sorption package from Github using devtools as:
 
 ```{r}
 devtools::install_github("devalc/Sorption")
