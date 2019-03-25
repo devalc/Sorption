@@ -7,7 +7,7 @@
 #' @return returns a linear calibration model and plot
 #' @export
 
-CalibrationPlot <- function(Ck,A){
+CalibrationCurve <- function(Ck,A){
     fit <- lm(A ~ Ck)
     c <- fit$coefficients[[1]]
     m<- fit$coefficients[[2]]
