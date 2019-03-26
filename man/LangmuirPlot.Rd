@@ -4,7 +4,7 @@
 \alias{LangmuirPlot}
 \title{Plot the langmuir model fit to the experimental data}
 \usage{
-LangmuirPlot(Ce, Qe, cor_lab_x, cor_lab_y, eq_lab_x, eq_lab_y, file_name)
+LangmuirPlot(Ce, Qe, cor_lab_x, cor_lab_y, eq_lab_x, eq_lab_y)
 }
 \arguments{
 \item{Ce}{equilibrium solution concentrations in mg/l}

@@ -1,6 +1,6 @@
 Package: Sorption
 Title: Predicts Sorption Processes Using Empirical Models
-Version: 0.0.1.0
+Version: 0.0.1.2
 Authors@R: person("Chinmay", "Deval", email = "chinmay.deval91@gmail.com", role = c("aut", "cre"))
 Description: This package provides efficient way for estimating isotherm equations and isotherm parameters from the experimental adsorption isotherm data. The package contains functions that plot the isotherms and determine the conformity of the experimental data to the empirical models. Langmuir and Freundlich empirical models are included in this package.   
 Depends: R (>= 3.5.0)
@@ -11,7 +11,7 @@ RoxygenNote: 6.1.1
 Imports: ggpubr,
          ggplot2,
          IDPmisc
-ImportFrom: stats, coefficients, lm, utils, write.table)
+ImportFrom: stats, coefficients, lm, utils, write.table
 Suggests: 
     knitr,
     rmarkdown

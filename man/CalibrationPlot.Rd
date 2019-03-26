@@ -2,9 +2,9 @@
 % Please edit documentation in R/CalibrationPlot.R
 \name{CalibrationPlot}
 \alias{CalibrationPlot}
-\title{calibration model plot}
+\title{Calibration model fit plot}
 \usage{
-CalibrationPlot(Ck, A, cor_lab_x, cor_lab_y, eq_lab_x, eq_lab_y, file_name)
+CalibrationPlot(Ck, A, cor_lab_x, cor_lab_y, eq_lab_x, eq_lab_y)
 }
 \arguments{
 \item{Ck}{Known concentrations (standards)}
@@ -15,6 +15,6 @@ CalibrationPlot(Ck, A, cor_lab_x, cor_lab_y, eq_lab_x, eq_lab_y, file_name)
 returns a linear calibration model plot
 }
 \description{
-This function determines fits a linear model between absorbance and known
+This function determines a linear model between absorbance and known
 concentrations to determine the calibration curve equation
 }

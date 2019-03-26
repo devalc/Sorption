@@ -45,5 +45,5 @@ FreundlichParameters(test_Ceq, test_Qeq, "test.csv")
 
 Frequnlich isotherm can be plotted using:
 ```{r}
-FreundlichPlot(test_Ceq, test_Qeq, 0.,0.8,0.,0.9,"test.pdf")
+FreundlichPlot(test_Ceq, test_Qeq, 0.,0.8,0.,0.9)
 ```
