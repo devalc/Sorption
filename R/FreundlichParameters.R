@@ -12,10 +12,10 @@
 FreundlichParameters <- function(Ce, Qe, output_fname)
 {
     x <- log10(Ce)
-    x<- IDPmisc::NaRV.omit(x)
     y <- log10(Qe)
-    y<-IDPmisc::NaRV.omit(y)
-    fit <- lm(y ~ x)
+    z <- data.frame(x,y)
+    z <- IDPmisc::NaRV.omit(z)
+    fit <- lm(z$y ~ z$x)
     n <- fit$coefficients[[2]]
     logKf<- fit$coefficients[[1]]
     Kf<- (10**logKf)
