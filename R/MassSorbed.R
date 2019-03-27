@@ -10,6 +10,6 @@
 #' @export
 
 SorbedMass <- function(Ci, Cf, V = 0.025, m= 0.001){
-    q <- (Ci - Cf)* v/m
+    q <- (Ci - Cf)* V/m
     return(q)
 }
