@@ -14,10 +14,9 @@
 FreundlichPlot <- function(Ce, Qe, cor_lab_x , cor_lab_y ,
                          eq_lab_x, eq_lab_y){
     x <- log10(Ce)
-    x<- IDPmisc::NaRV.omit(x)
     y <- log10(Qe)
-    y<-IDPmisc::NaRV.omit(y)
-    fit <- lm(y ~ x)
+    z <- data.frame(x,y)
+    fit <- lm(z$y ~ z$x)
     coeff = coefficients(fit)
     z <- data.frame(x,y)
     ggscatter(x = "x",y ="y", data = z, xlab = "log10 [Ce (mg/L)]", ylab = " log10 [Qe (mg/kg)]", add = "reg.line",
