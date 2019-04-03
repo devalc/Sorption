@@ -11,9 +11,9 @@
 
 SampleAbstoConc <- function(SampleAbs, CalibSlope, CalibIntercept, DF =1){
     if (CalibIntercept < 0) {
-        Ce <-  ((SampleAbs + abs(CalibIntercept))/ CalibSlope)*DF
+        Ce <-  (SampleAbs + abs(CalibIntercept)/ CalibSlope)*DF
     } else{
-        Ce <-  ((SampleAbs - abs(CalibIntercept))/ CalibSlope)*DF
+        Ce <-  (SampleAbs - abs(CalibIntercept)/ CalibSlope)*DF
     }
     return(Ce)
 }
