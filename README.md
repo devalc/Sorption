@@ -1,7 +1,7 @@
 # Sorption
 
 R package for predicting sorption processes using empirical models. Currently 
-contains funcitons for the Langmuir and Freundlich models.         
+contains funcitons for the Linear, Langmuir (linear and non linear forms) and Freundlich (linear form) models.         
 
 ## Getting Started
 
