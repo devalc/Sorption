@@ -1,7 +1,7 @@
 # Sorption
 
 R package for predicting sorption processes using empirical models. Currently 
-contains funcitons for the Linear, Langmuir (linear and non linear forms) and Freundlich (linear form) models.         
+contains functions for the Linear, Langmuir (linear and non-linear forms), and Freundlich (linear form) models.         
 
 ## Getting Started
 
@@ -10,7 +10,7 @@ local machine.
 
 ## How to Install
 
-Currently the package is available only through devtools. 
+Currently, the package is available only through devtools. 
 
 Install devtools by running following command in your R console: 
 
@@ -37,13 +37,13 @@ test_Ceq , test_Qeq
 
 ## Example Usage: Parameters
 
-Parameters for the frequnlich isotherm can be predicted using:
+Parameters for the Freundlich isotherm can be predicted using:
 ```{r}
 FreundlichParameters(test_Ceq, test_Qeq, "test.csv")
 ```
 ## Example Usage: Plots
 
-Frequnlich isotherm can be plotted using:
+Freundlich isotherm can be plotted using:
 ```{r}
 FreundlichPlot(test_Ceq, test_Qeq, 0.,0.8,0.,0.9)
 ```
